@@ -25,7 +25,9 @@ fastapi_config: dict[str, Any] = {
     "title": "API",
 }
 
-mongo_url = "mongodb+srv://nuraynamedresova:vtrntg1819@cluster0.a7076xe.mongodb.net/?retryWrites=true&w=majority)"
+mongo_url = (
+    f"mongodb://{env.MONGOUSER}:{env.MONGOPASSWORD}@{env.MONGOHOST}:{env.MONGOPORT}/"
+)
 if env.MONGO_URL:
     mongo_url = env.MONGO_URL
 
