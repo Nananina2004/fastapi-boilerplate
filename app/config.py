@@ -12,7 +12,7 @@ class Config(BaseSettings):
     MONGOHOST: str = "localhost"
     MONGOPORT: str = "27017"
     MONGOUSER: str = "root"
-    MONGOPASSWORD: str = "password"
+    MONGOPASSWORD: str = "vtrntg1819"
     MONGODATABASE: str = "fastapi"
     MONGO_URL: str = ""
 
